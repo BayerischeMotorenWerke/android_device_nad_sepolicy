@@ -1,3 +1,6 @@
+# MatLog calls dmesg
+allow platform_app kernel:system syslog_read;
+
 allow platform_app zygote:unix_stream_socket getopt;
 
 # Allow NFC service to be found
